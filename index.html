@@ -82,14 +82,17 @@
   .nav-mobile {
     display: none;
     position: fixed;
-    inset: 78px 0 0 0;
-    z-index: 70;
-    background: rgba(246,244,239,0.98);
-    backdrop-filter: blur(10px);
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 80;
+    background: #F6F4EF;
     padding: 28px 24px 40px;
     flex-direction: column;
     gap: 4px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .nav-mobile.is-open { display: flex; }
   .nav-mobile a {
@@ -237,17 +240,17 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav class="nav-mobile {{ menuNavClass }}" aria-hidden="{{ menuHidden }}">
-      <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
-      <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
-      <a href="#services" onClick="{{ pickHow }}">How We Work</a>
-      <a href="#services" onClick="{{ pickPartners }}">Partner Alliance</a>
-      <a href="#team" onClick="{{ closeMenu }}">Our Team</a>
-      <a href="#faqs" onClick="{{ closeMenu }}">FAQs</a>
-      <a href="#contact" onClick="{{ closeMenu }}">Contact</a>
-      <a href="tel:6307991584" onClick="{{ closeMenu }}">(630) 799-1584</a>
-    </nav>
   </header>
+  <nav class="nav-mobile {{ menuNavClass }}" aria-hidden="{{ menuHidden }}">
+    <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
+    <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
+    <a href="#services" onClick="{{ pickHow }}">How We Work</a>
+    <a href="#services" onClick="{{ pickPartners }}">Partner Alliance</a>
+    <a href="#team" onClick="{{ closeMenu }}">Our Team</a>
+    <a href="#faqs" onClick="{{ closeMenu }}">FAQs</a>
+    <a href="#contact" onClick="{{ closeMenu }}">Contact</a>
+    <a href="tel:6307991584" onClick="{{ closeMenu }}">(630) 799-1584</a>
+  </nav>
 
   <section id="top" class="hero-section" style="max-width:1180px;margin:0 auto;padding:120px 40px 96px">
     <div data-reveal="1" style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:36px">Naperville, Illinois</div>
