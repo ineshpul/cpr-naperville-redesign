@@ -64,15 +64,17 @@
     padding: 72px 56px;
     background: #F6F4EF;
   }
-  .quote-photo {
-    margin-top: 56px;
+  .quote-aside-photo {
+    margin-top: 22px;
+    width: 100%;
+    max-width: 280px;
     overflow: hidden;
     background: #E8E2D6;
-    max-height: 420px;
   }
-  .quote-photo img {
+  .quote-aside-photo img {
     width: 100%;
-    height: 420px;
+    height: auto;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center 45%;
     display: block;
@@ -195,8 +197,7 @@
     }
     .photo-split-media { min-height: 280px; }
     .photo-split-copy { padding: 48px 20px !important; }
-    .quote-photo { margin-top: 36px; max-height: 260px; }
-    .quote-photo img { height: 260px; }
+    .quote-aside-photo { max-width: 220px; margin-top: 18px; }
     .stats-grid > div {
       padding: 28px 0 !important;
       border-right: none !important;
@@ -624,17 +625,17 @@
 
   <section data-reveal="1" style="padding:88px 0 0">
     <div class="quote-grid page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
-      <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;padding-top:10px">What clients say</div>
+      <div>
+        <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;padding-top:10px">What clients say</div>
+        <div class="quote-aside-photo" data-reveal="1">
+          <img src="photo-teamwork.png" alt="Professionals joining together in a show of partnership" width="560" height="420" loading="lazy" />
+        </div>
+      </div>
       <blockquote style="margin:0;max-width:760px">
         <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:23px;line-height:1.5;color:#1A1917;margin:0 0 16px;text-wrap:pretty">“I have had the great pleasure in working Conference Planning Resources. In my capacity as Senior Event Manager of a global pharmaceutical company, my department was responsible for thousands of events each year. Jeff’s service, expertise, and reliability are invaluable. In addition, he always works with the client’s best interest in mind and always with a speedy turnaround time. Jeff has an innate ability to think outside the box on every event (and there have been many events since 2003). Jeff’s industry knowledge is instrumental in bringing our meetings to the highest possible level. He makes certain that we look good.</p>
         <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:23px;line-height:1.5;color:#1A1917;margin:0 0 24px">I would highly recommend Jeff and his team to any conference/meeting planner!”</p>
         <footer style="font-size:14px;color:#4A463E;padding-top:16px;border-top:1px solid #DCD6C9">Susan Bartlett<br /><span style="color:#7A7469">Bronze Level CTSM</span></footer>
       </blockquote>
-    </div>
-    <div class="page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px">
-      <div class="quote-photo" data-reveal="1">
-        <img src="photo-teamwork.png" alt="Professionals joining together in a show of partnership" width="1400" height="700" loading="lazy" />
-      </div>
     </div>
   </section>
 
