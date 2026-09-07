@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bringing Life to Meetings &amp; Events | Conference Planning Resources — Naperville</title>
+<meta name="description" content="Homepage redesign for Conference Planning Resources, a Naperville IL firm specializing in hotel procurement, site selection, and contract negotiation for associations and Fortune 500 companies.">
+<link rel="icon" href="logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F4EF; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: #B32014; }
+  input, textarea, button { font: inherit; }
+  ::placeholder { color: #9C978C; }
+  ::selection { background: #E8E2D6; }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::marker { content: ""; }
+  details[open] > summary span:first-child { transform: rotate(45deg); }
+</style>
+</helmet>
+<div style="background:#F6F4EF;color:#1A1917;font-family:'Libre Franklin',system-ui,sans-serif">
+
+  <header style="position:sticky;top:0;z-index:60;background:rgba(246,244,239,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #DCD6C9">
+    <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;padding:0 40px;height:78px">
+      <a href="#top" style="display:flex;align-items:center;flex:0 0 auto"><img src="logo.png" alt="Conference Planning Resources, Ltd." style="height:34px;width:auto;display:block" /></a>
+      <nav style="display:flex;align-items:center;gap:30px;font-size:13.5px;color:#4A463E">
+        <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
+        <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
+        <a href="#services" onClick="{{ pickHow }}">How We Work</a>
+        <a href="#services" onClick="{{ pickPartners }}">Partner Alliance</a>
+        <a href="#team">Our Team</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact" style="color:#1A1917;border-bottom:1px solid #B32014;padding-bottom:2px" style-hover="color:#B32014">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="max-width:1180px;margin:0 auto;padding:120px 40px 96px">
+    <div data-reveal="1" style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:36px">Naperville, Illinois</div>
+    <div style="display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:72px;align-items:end">
+      <h1 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:clamp(44px,5.4vw,76px);line-height:1.03;letter-spacing:-0.025em;margin:0;text-wrap:balance">Bringing life to meetings and events.</h1>
+      <div data-reveal="2" style="padding-bottom:8px">
+        <p style="font-size:18px;line-height:1.66;color:#3D3A34;margin:0 0 26px;text-wrap:pretty">Hotel procurement, site selection and contract negotiation for state and national associations and Fortune&nbsp;500 companies.</p>
+        <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+          <a href="#contact" style="font-size:15px;color:#1A1917;border-bottom:1px solid #1A1917;padding-bottom:5px" style-hover="color:#B32014;border-color:#B32014">Request a proposal</a>
+          <a href="tel:6307991584" style="font-size:15px;color:#4A463E;border-bottom:1px solid #DCD6C9;padding-bottom:5px" style-hover="color:#B32014;border-color:#B32014">(630) 799-1584</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-reveal="1" style="border-top:1px solid #DCD6C9">
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(3,1fr)">
+      <div style="padding:44px 40px 44px 0;border-right:1px solid #DCD6C9">
+        <div style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:42px;line-height:1;letter-spacing:-0.02em">30+ years</div>
+        <div style="font-size:14px;color:#6D675C;margin-top:12px">Building industry relationships</div>
+      </div>
+      <div style="padding:44px 40px;border-right:1px solid #DCD6C9">
+        <div style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:42px;line-height:1;letter-spacing:-0.02em">Fortune 500</div>
+        <div style="font-size:14px;color:#6D675C;margin-top:12px">Companies and national associations</div>
+      </div>
+      <div style="padding:44px 0 44px 40px">
+        <div style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:42px;line-height:1;letter-spacing:-0.02em">Worldwide</div>
+        <div style="font-size:14px;color:#6D675C;margin-top:12px">Intimate gatherings to lavish events</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid #DCD6C9">
+    <div style="max-width:1180px;margin:0 auto;padding:104px 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
+      <h2 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;line-height:1.1;letter-spacing:-0.02em;margin:0">Make the most of your meetings and events</h2>
+      <div data-reveal="2" style="max-width:660px">
+        <p style="font-size:19px;line-height:1.72;color:#3D3A34;margin:0 0 28px;text-wrap:pretty">Conference Planning Resources specializes in hotel procurement, site selection and contract negotiation. For decades, state and national associations and Fortune 500 companies have relied on Conference Planning Resources to find their best hotel and resort options at the best prices. From simple and intimate gatherings to lavish meetings and events around the world, you can trust us to find you what you need for your events so you can focus on serving your clients and growing your business.</p>
+        <p style="font-family:'Newsreader',Georgia,serif;font-size:25px;line-height:1.45;color:#1A1917;margin:0;padding-left:24px;border-left:2px solid #B32014;text-wrap:pretty">Give us a chance to show you why our first-time clients become lifelong partners!</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid #DCD6C9">
+    <div style="max-width:1180px;margin:0 auto;padding:96px 40px 24px">
+      <div data-reveal="1" style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:64px">Why clients work with us</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:56px">
+        <article data-reveal="1" style="display:flex;flex-direction:column">
+          <div style="font-family:'Newsreader',Georgia,serif;font-size:15px;color:#B32014;margin-bottom:20px">01</div>
+          <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:27px;line-height:1.18;letter-spacing:-0.015em;margin:0 0 18px;padding-top:18px;border-top:1px solid #1A1917">Work smarter and easier</h3>
+          <p style="font-size:16px;line-height:1.72;color:#4A463E;margin:0;text-wrap:pretty">We’ll save you the hassle of doing time-consuming research by finding your best hotel options, and we’ll provide you with a detailed side-by-side comparison of hotel offers. We’ll also coordinate your site visits, providing you with single point of contact and handling all of travel planning so you can focus on what’s most important: making the right decisions for your organization.</p>
+        </article>
+        <article data-reveal="2" style="display:flex;flex-direction:column">
+          <div style="font-family:'Newsreader',Georgia,serif;font-size:15px;color:#B32014;margin-bottom:20px">02</div>
+          <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:27px;line-height:1.18;letter-spacing:-0.015em;margin:0 0 18px;padding-top:18px;border-top:1px solid #1A1917">Get better deals and control your risks</h3>
+          <p style="font-size:16px;line-height:1.72;color:#4A463E;margin:0;text-wrap:pretty">We’ll negotiate the best rates and concessions for you, and we’ll also negotiate contract clauses that protect you from the widest range of foreseeable and unforeseeable liabilities. We’ll ensure that you maximize every dollar you spend on an event, and we’ll help to protect your organization from costly breaches, failures and losses.</p>
+        </article>
+        <article data-reveal="3" style="display:flex;flex-direction:column">
+          <div style="font-family:'Newsreader',Georgia,serif;font-size:15px;color:#B32014;margin-bottom:20px">03</div>
+          <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:27px;line-height:1.18;letter-spacing:-0.015em;margin:0 0 18px;padding-top:18px;border-top:1px solid #1A1917">Use our connections and our leverage</h3>
+          <p style="font-size:16px;line-height:1.72;color:#4A463E;margin:0;text-wrap:pretty">We’ve spent more than 30 years building our industry relationships, and the large number of programs that we book every year provides us with considerable buying power. We invite you to use our connections to strengthen your relationships with hotel flags and convention-and-visitors bureaus (CVBs), and we invite you to use our buying power to win your organization the best possible contracts for your favorite destinations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="padding:96px 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+      <h2 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;letter-spacing:-0.02em;margin:0 0 48px">Our services</h2>
+
+      <div style="display:grid;grid-template-columns:minmax(200px,280px) minmax(0,1fr);gap:48px;align-items:start">
+        <nav style="position:sticky;top:110px;display:flex;flex-direction:column;border-top:1px solid #1A1917">
+          <button type="button" onClick="{{ pickSite }}" style="{{ tabSite }}">Site Selection</button>
+          <button type="button" onClick="{{ pickContracts }}" style="{{ tabContracts }}">Contract Negotiations</button>
+          <button type="button" onClick="{{ pickHow }}" style="{{ tabHow }}">How We Work</button>
+          <button type="button" onClick="{{ pickPartners }}" style="{{ tabPartners }}">Partner Alliance</button>
+        </nav>
+
+        <div>
+          <sc-if value="{{ isSite }}" hint-placeholder-val="{{ true }}">
+            <div>
+              <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:22px;letter-spacing:-0.015em;margin:0 0 14px">Site Selection</h3>
+              <div style="column-width:320px;column-gap:48px;margin-bottom:36px">
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">At Conference Planning Resources, we make it simple to find your perfect event destination, hotel or resort venue. We will research a distinctive array of three, four, and five-diamond hotels to identify the properties that best suit your needs and budget. We have strong relationships with the major brands and other unique independent hotels and resorts throughout North America, Mexico, the Caribbean, and Globally.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">For more than 25 years, we’ve helped companies and associations arrange hotels and services for their destination events, including sales meetings, conferences, product launches, incentive programs, seminars, executive retreats, board meetings, and more.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We help our clients find the right destinations and hotels negotiating the best possible hotel contracts based upon their needs and preferences.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Transparency is one of our core principles. And we pledge to share communications we have and actions we take on your behalf. You will have complete control of the entire process.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">At CPR, we’re dedicated to ensuring our clients receive the best service possible. We will work with you throughout the entire process with that belief in mind, from hotel RFP development and distribution to the site inspection, all the way through to the final hotel contract negotiation.</p>
+              </div>
+
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">RFP Development and Distribution</h4>
+                <p style="font-size:16px;line-height:1.62;color:#1A1917;margin:0 0 12px;font-weight:600">We’ll hand-craft your RFP to make your event significantly more attractive to hotels.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We create requests for proposals (RFPs) which exceed hotel industry standards and are often used as models by other companies. Some organizations submit their RFPs through online databases that can strip the RFPs of many details that show an event’s value to a hotel.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">If you already have specs for your program, allow us to transform them into a stellar RFP that will set the hotel sales representative up for success when presenting your opportunity to the hotel’s internal sales team. When hotels have a greater understanding of all of your needs and overall revenue value, your organization will be in a better position to obtain more competitive responses from the bidding hotel(s).</p>
+                <p style="font-size:16px;line-height:1.62;color:#1A1917;margin:0 0 12px;font-weight:600">By delivering your RFP directly to the right individuals, we ensure that it receives special attention and prompt service.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Once we have evaluated and strengthened your RFP, we ensure it is seen by the right people in the right places who will be evaluating your RFP.</p>
+              </div>
+
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Property and Destination Research</h4>
+                <p style="font-size:16px;line-height:1.62;color:#1A1917;margin:0 0 12px;font-weight:600">We’ll identify your best destination options, and find options that you my may never have known existed.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We work with Three, Four and Five Diamond hotels and resorts in destinations all over the world. Whether they are boutique hotels or large convention properties, we know the products in the industry.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Stop spending endless hours or days trying to find viable hotel options in various destinations that can accommodate your meeting specifications. CPR’s access to state-of-the-art software coupled with our broad knowledge of destinations and hotels can reduce this time-consuming exercise down to a matter of minutes! We will provide you with a thorough report of our findings, married with formal proposals and appropriate hotel sales collateral.</p>
+              </div>
+
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Site Inspection Support</h4>
+                <p style="font-size:16px;line-height:1.62;color:#1A1917;margin:0 0 12px;font-weight:600">We’ll handle all the details of scheduling site visits to make your travel easy, enjoyable and successful.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Once you short-list the hotels, we’ll coordinate with you and the hotel to create a comprehensive itinerary that suits your schedule, ensuring you maximize your time when inspecting the hotels. From the moment you arrive into a city or destination until the moment you leave, we can assist with planning every detail. We work with the hotels, the convention and visitors bureaus (CVBs) and destination management companies (DMCs) to coordinate site inspection trip itineraries, getting sponsorship from hotels and CVBs to handle travel expense reimbursement, airport transfers and transfers to each hotel site, meals, overnight stays, etc. all designed to save you money when traveling to inspect hotels</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">We can also accompany you on the site inspections to ensure that every detail is handled and to see the program and space needs through your eyes.</p>
+              </div>
+
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9;border-bottom:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Property Selection Support</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Having completed the site inspection(s), we’ll ensure you have everything needed prior to making the final decision or prior to presenting to a superior. Whether you need menus, floor plans, A/V price lists, we’ll make sure that there are no hidden costs and you are aware of all the fine print so there are no surprises during contract negotiations.</p>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isContracts }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:22px;letter-spacing:-0.015em;margin:0 0 14px">Contract Negotiations</h3>
+              <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We aggressively negotiate hotel contracts to ensure that we are getting the best pricing, the best concessions and the most protective clauses (protecting against unforeseen liabilities) possible. We find the hotel’s threshold to get as much as we can on your behalf.</p>
+              <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We don’t stop at negotiating down the room rates and getting meeting room rental as low as possible, if not waived. We continue negotiating to win additional hotel concessions that save our clients money. These could include, but are not limited to the following:</p>
+              <ul style="list-style:none;margin:0 0 18px;padding:0">
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>lowering hotel in-house Audio Visual pricing</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>waiving banquet labor bartender fees</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>discounted staff rooms, more upgrades, and more complimentary rooms</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>reducing or comping the cost of staging</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>reducing and capping hang point charges</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>reducing the costs of coffee by the gallon</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>comping high-speed internet access connections in the guestrooms and meeting rooms</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>And a myriad of additional items, too many to list. Contact us to learn more.</li>
+              </ul>
+              <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We also work to mitigate risk – By protecting clients from potential (and costly) liabilities with our unique agency clauses we insist hotels publish in the contract that are all designed to help lessen your organization’s liability with the hotel.</p>
+              <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">CPR will work with you to better protect your organization with the following strategies:</p>
+              <ul style="list-style:none;margin:0 0 18px;padding:0">
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Bringing your attention to and suggesting how to reduce unforeseen financial liabilities</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Identifying the hotels’ pricing, concession and contract negotiation thresholds while still ensuring everything is fair and equitable for both you and the hotel</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Sharing extremely unique state-of-the-art contract clauses to better protect your organization</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Expediting the internal process and turn around time should an in-house legal counsel need to review, as CPR’s protective clauses have already been written into your contract</li>
+                <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Allowing you to maintain control throughout the process, making all final decisions and signing the contract</li>
+              </ul>
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Event Troubleshooting</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Once the contract has been executed, we don’t disappear. We are by your side if anything goes wrong due to hotel turnover, management changes, unresponsive conference service managers, billing issues, etc.</p>
+              </div>
+              <blockquote style="margin:26px 0 0;padding-top:26px;border-top:1px solid #DCD6C9">
+                <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:19px;line-height:1.55;color:#1A1917;margin:0 0 16px;text-wrap:pretty">“We have been so thankful to have been able to call on the services of CPR℠. Their contract negotiation competency has allowed us to save money, protect us in areas we were preciously oblivious to, including limiting potential liabilities. Their knowledge base of hotels, resorts, convention centers and cruise lines has been especially helpful to us. CPR’s services has added value to our events by allowing us to visit new cities, new venues, and new options, a freshness that we really needed. Best of all, our hotel pricing is never impacted as a result of their involvement. It’s the best of both worlds!! Thanks CPR℠ for all you have done and continue to do for us.”</p>
+                <footer style="font-size:14px;line-height:1.6;color:#4A463E">Kimberly Martin<br /><span style="color:#7A7469">Director Of Meetings &amp; Conventions, eFinity Events, Inc.</span></footer>
+              </blockquote>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isHow }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:22px;letter-spacing:-0.015em;margin:0 0 14px">How We Work</h3>
+              <div style="padding:0 0 26px">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">How We Work With Our Clients</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We can be as hands off or as hands on as you want. If you like building relationships with hotel salespeople, we encourage that. We also want to be sure you or your company is in receipt of all the perks that come with those relationships and rewards memberships. And if you are someone who likes to negotiate, we can step back and only advise if you run into any roadblocks.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">But if you are tired of solicitation emails and phone calls, you can simply refer those people to us.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We are here to complement your efforts and the amount of assistance we provide is entirely up to you.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">We do not charge you any management fees, hourly fees or project fees for hotel procurement services nor are you are required to sign a contract with us. We earn your business one meeting at a time. And you maintain full control.</p>
+              </div>
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">How We Work With Hotels</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We believe that partnering in good faith with hotel salespeople lends itself to getting more for our clients. That is why we have built strong relationships with hoteliers over many years.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Our compensation does not come from you, instead we earn a marketing service fee from the hotel.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">The best part? Conference rates are NOT affected as a result of our service. We ensure that our partner hotels agree to this contractually. Hotels must stipulate in your contracts that our fee will not impact your hotel pricing. Period. Nothing can be negatively impacted. Not the guest room rates, food and beverage prices, nor our ability to negotiate concessions.</p>
+              </div>
+              <blockquote style="margin:26px 0 0;padding-top:26px;border-top:1px solid #DCD6C9">
+                <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:19px;line-height:1.55;color:#1A1917;margin:0 0 16px;text-wrap:pretty">“The SWCOLT organization holds an annual conference within a 9 state region. The Conference Planning Resources team has been a dependable partner with our teacher’s organization. They help us search for the hotels that would best suit our educational needs and our budget! I have appreciated CPR’s expertise in negotiating hotel contracts at no cost to our organization. CPR℠ knows the business strategies of the hotel industry – which helps us negotiate a contract that not only saves our organization thousands of dollars, but also limits potential financial liabilities which could harm our non-profit organization. I enjoy working with this friendly group of professionals.”</p>
+                <footer style="font-size:14px;line-height:1.6;color:#4A463E">Jody Klopp<br /><span style="color:#7A7469">Executive Director, Southwest Conference on Language Teaching (SWCOLT)</span></footer>
+              </blockquote>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ isPartners }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:22px;letter-spacing:-0.015em;margin:0 0 14px">Partner Alliance</h3>
+              <div style="padding:0 0 26px">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Destination Management Companies (DMCs)</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">If you need more than a hotel and need to plan offsite activities or find offsite venues, we partner with Destination Management Companies in every destination around the world. Whether shopping mountain or tropical destinations, cities, suburbs, or resort areas, we can help you shop for and find the perfect partner to help you execute your events.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Following are a couple of our DMC partners; Hello! Destination Management, ACCESS, Host Global Alliance, &amp; RMC DMC.</p>
+              </div>
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Event Planning</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Some of our clients have additional needs for corporate services to help support certain areas of their meeting and event planning to effectively execute an conference. Our agency has “select” solution providers we have entrusted to provide an a la cart of service offerings that our clients can choose.</p>
+              </div>
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Audio-Visual</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">We can show you how to save up to 30%, and in some cases, up to 50% on your Audio Visual costs. Regardless of the discount, we will ensure your a/V costs are minimal.</p>
+              </div>
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9">
+                <h4 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:20px;margin:0 0 12px">Cruises</h4>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">If you would like to have an event at sea or on a river, we can help with that too.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Few experiences can compare to those that happen at sea. Be it an incentive trip, corporate gathering or product launch, what better value than to host your event on the waters? You are sure to find a captive audience on board and can provide your attendees with the opportunity to explore multiple destinations in just one trip. That is why Conference Planning Resources is in touch with this rapidly expanding segment of the meeting and incentive travel industry—and is here to help you maximize this opportunity. From exotic island locations to big city waters, we are pleased to help you navigate a plethora of choices.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We can show you how a cruise option can often save you 30% or more versus hosting your program at a land-based hotel or resort while accomplishing the same objectives. As well, due to their all-inclusive nature, cruises offer one-stop shopping. There are no menus to plan, no airfare to arrange, no transfers to coordinate, no special activities to plan and no entertainment to locate. It’s all included.</p>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Your organization can also enjoy the exclusive use of its own vessel with a private charter. Choose your own itinerary. Fly your company flag. Rename the decks. Customize the ports of call, the length of your program, the onboard entertainment and more.</p>
+              </div>
+              <div style="padding:26px 0;border-top:1px solid #DCD6C9;border-bottom:1px solid #DCD6C9">
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Conference Planning Resources is a full solution provider for your meetings and conferences. In addition to hotel procurement support, our clients have the ability to shop a-la-cart from a myriad of services, such as, but not limited to the following support;</p>
+                <ul style="list-style:none;margin:0 0 18px;padding:0">
+                  <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Audio Visual Services</li>
+                  <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Destination Management Companies (DMC’s)</li>
+                  <li style="font-size:15.5px;line-height:1.6;color:#4A463E;padding:9px 0 9px 18px;border-top:1px solid #E4DFD4;position:relative"><span style="position:absolute;left:0;top:9px;color:#B32014">·</span>Event Planning Services</li>
+                </ul>
+                <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">For more information about any of our Lifeline Alliance Partners and pricing, please contact Conference Planning Resources at 630-799-1584 or email us at info@conferenceplanningresources.com.</p>
+              </div>
+              <div style="margin-top:40px">
+                <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#B32014;margin:0 0 14px">Alliance partner profiles</div>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>REEL IMPACT — Audio Visual Services</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">REEL IMPACT is an audiovisual company that specializes in AV technical support for conferences. We work with corporations, government agencies and associations all over North America.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">For meeting planners who want to worry less about AV, REEL IMPACT provides dependable audiovisual support. We partner with you in a way that puts you at ease and makes you feel like we are an extension of your team.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Core services</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Full A/V Support and Production · Audience Response Systems · Awards Productions · Audio recording · Backdrop · Breakout room AV · Conference AV · Content Creation · Camera packages · Creative design · Closed-caption · Digital video production · Digital Signage · Displays · Drape · Dress kits · Drafting of floor plans · Dynamic handheld microphone · Edge blending · Entertainment · Event Staging · Flipcharts · Graphics · High Definition · HD Cameras · iMag · Instants video · Images · Image projection · Kiosks · Knowledge capture · Lavaliere mic · Line Array Sound System · Lighting · Lighting design · Multi-format video playback · Music · Music Licensing · Music Videos · Nonlinear Digital Editing · On camera talent · Pipe and Drape · Plasma podium · Projectors · Projection screens · PowerPoint Operator · PowerPoint design · Producers · Production · Pre-event site visit · Pre-production planning · Poster board · Powered Speaker · Photography · Q&amp;A microphones · Recordings · Rigging · Satellite transmission · Speaker Support · Speaker Ready room · Speech Coach · Set design · Set fabrication · Staging · Stage wash · Stage lighting wash · Show flow · Sound system · Sound engineer · Sound reinforcement · Technical Director · Teleprompter · Teleprompter operator · Truss · Walk-in music · Wide-screen edge blending · Wireless microphones · Wireless remote computer control system · Wired mics · Webcasting · Trade Shows · Uplink truck · Video playback · Video projection · Voice of God · Velour drape</p></div>
+              </details>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>Hello! Destination Management — DMC</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Based on our core values of Integrity, Enthusiasm, and an Intense Desire to Succeed, Hello! Destination Management consults with corporations and associations to provide impactful meeting and event solutions to attendees through thoughtfully designed themed events, tours, teambuilding activities, brand activations, and transportation solutions. As a multi-award-winning, full-service destination management company, Hello! services meeting planners in some of the country’s most popular meeting destinations. From its origins in 1986 as Hello! Florida, Hello! Destination Management has grown to over 10 offices and 200 full-time employees serving clients from coast to coast.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Destinations we serve</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Annapolis · Austin · Baltimore · Boca Raton · Bonita Springs · Dallas · Daytona · Ft. Lauderdale · Ft. Worth · Hollywood · Jacksonville · Lake Tahoe · Los Angeles · Marco Island · Miami · Monterey &amp; Carmel · Napa &amp; Sonoma · Naples · Nashville · Orange County, CA · Orlando · Palm Beach · Phoenix · Sacramento · San Antonio · San Diego · San Francisco · Scottsdale · Sedona · Silicon Valley · St. Petersburg · Tampa · The Keys &amp; Key West · The Palm Desert · Tucson · Washington, D.C.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Core services</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Transportation · Theme Décor and Entertainment · Tours and Activities · Dine-Around Services · Teambuilding · Off-Site Events · Hospitality Staff</p></div>
+              </details>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>ACCESS Destination Services — DMC</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">At ACCESS, we don’t just focus on what your event should be, but <em>why</em> your event should be at all. We collaborate with you to transform your events into shared experiences – because shared experiences create the opportunity to both <em>inspire</em> and <em>be</em> inspired, and inspired people drive organizational change. For 50 years ACCESS has been leading the industry as your single source for all your experiential event and destination management needs. With our impressive and ever-growing national, award winning presence, we’re able to offer local expertise everywhere and innovative solutions anywhere. What puts us apart from anyone else is our approach to start with the end in mind. We come together to understand why your event is happening in the first place and what the purpose of your program is before talking about the number of participants, décor and activities. Our values are who we are. We imagine first, demand integrity, embody excellence, always collaborate, and service obsession. We are shared experiences, inspired people. We are ACCESS Destination Services.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Destinations we serve</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">San Diego · Los Angeles · San Francisco / Wine Country · Lake Tahoe · Orange County · Palm Springs · Las Vegas · Sedona · Phoenix / Scottsdale · Tucson · Austin · Dallas / Ft Worth · San Antonio · Colorado / Mountains · Utah · Wyoming · Montana · Nashville · Atlanta · Orlando · South Florida · Chicago · New Orleans · New York · Washington DC · Boston · Philadelphia</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Core services</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Destination Management · Décor Design · Event Production · Specialty Entertainment · Lighting Concept &amp; Design · Online Registration · Program Development · Unique Recreation · Exclusive Offsite Venues · Innovative Themed Activations · Corporate Social Responsibility · Team Building · Customized Tours · Transportation Logistics · Local gifts &amp; amenities</p></div>
+              </details>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>Hosts Global — DMC alliance</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Hosts Global is a strategic partner for meeting and event planners worldwide. We offer full-service destination management in 300+ locations through our global alliance of select DMCs. Our clients receive streamlined global planning, dedicated account management and superior execution of group programs including meetings, conventions, incentive programs and special events. Hosts can support you to create the right atmosphere for receptions, dinners, unique themed events, entertainment, décor, corporate social responsibility and more.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">North America</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0"><strong style="color:#1A1917;font-weight:600">Canada</strong> — Montreal · New Brunswick · Newfoundland · Niagara · Nova Scotia · Ottawa · Prince Edward Island · Quebec · Toronto · Tremblant · Vancouver<br /><strong style="color:#1A1917;font-weight:600">Mexico</strong> — Cancun · Los Cabos · Mexico City · Puerto Vallarta · Punta Mita · Riviera Maya<br /><strong style="color:#1A1917;font-weight:600">United States</strong> — Arizona · California · Colorado · Connecticut · Delaware · Florida · Georgia · Hawai’i · Illinois · Louisiana · Maine · Maryland · Massachusetts · Nevada · New Hampshire · New Jersey · New York · North Carolina · Pennsylvania · Rhode Island · South Carolina · Tennessee · Texas · Vermont · Virginia · Washington · Washington DC<br /><strong style="color:#1A1917;font-weight:600">Caribbean</strong> — British Virgin Islands · Dominican Republic · Puerto Rico · St. Lucia · The Bahamas</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Global</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0"><strong style="color:#1A1917;font-weight:600">Africa</strong> — Eqypt<br /><strong style="color:#1A1917;font-weight:600">Asia</strong> — Bhutan · China · India · Indonesia · Japan · Maldives · Nepal · Singapore · South Korea · Sri Lanka<br /><strong style="color:#1A1917;font-weight:600">Central America</strong> — Costa Rica · Panama<br /><strong style="color:#1A1917;font-weight:600">Eurasia</strong> — Russia<br /><strong style="color:#1A1917;font-weight:600">Europe</strong> — Belgium · Denmark · England · Estonia · France · Germany · Greece · Greenland · Iceland · Ireland · Italy · Latvia · Lithuania · Luxembourg · Malta · Netherlands · Norway · Poland · Romania · Scotland · Spain · Sweden · Turkey · Ukraine · Wales<br /><strong style="color:#1A1917;font-weight:600">Middle East</strong> — Sultanate of Oman · United Arab Emirates<br /><strong style="color:#1A1917;font-weight:600">Oceania</strong> — Australia · Fiji · New Zealand<br /><strong style="color:#1A1917;font-weight:600">South America</strong> — Argentina · Peru</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Core services</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Special event design, production and management · Décor · Entertainment · Private and group dinners · Recreation activities, tours and teambuilding · Corporate social responsibility · Transportation and logistics · Staffing and convention services</p></div>
+              </details>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>RMC — Your Destination Connection</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Originating in the Rocky Mountains, RMC is a woman-owned and founder-led company, who specializes in full-service, high-end, luxury destination management services in the United States. At RMC, we create innovative and inspirational events that guests will rave about for years to come. We believe in the power of experiences.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">From the peaks of Aspen to the infamous vineyards of Napa, RMC has masterfully crafted thousands of unforgettable experiences for over 32 years. RMC proudly works with a distinguished clientele of corporate &amp; incentive groups, and travel &amp; meeting planners corporations to produce completely tailored destination services.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">RMC is exceedingly proud to be the preferred provider for select luxury properties including Four Seasons Hotels and Resorts, Montage Hotels and Resorts, Auberge Resorts Collection, The Ritz-Carlton Hotel Company, St. Regis Hotels and Resorts, along with other Marriott Luxury Brands.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">RMC’s acclaimed services include creating, planning, and executing signature events; designing unique activities to engage and promote collaboration; organizing ground transportation and local logistics; custom-designed unique VIP experiences; and more. From a fortune 500 board retreat to a 20,000-guest celebration, RMC’s skilled staff and top-level connections will ensure that your event will exceed expectations.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Destinations we serve</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0"><strong style="color:#1A1917;font-weight:600">Lowcountry</strong> — Charleston, SC · Bluffton, SC · Hilton Head, SC · Savannah, GA<br /><strong style="color:#1A1917;font-weight:600">Colorado</strong> — Aspen · Bachelor Gulch · Beaver Creek · Breckenridge · Colorado Springs · Copper Mountain · Denver · Keystone · Snowmass · Steamboat Springs · Telluride · Vail · Winter Park<br /><strong style="color:#1A1917;font-weight:600">Wyoming</strong> — Jackson Hole<br /><strong style="color:#1A1917;font-weight:600">Montana</strong> — Big Sky · Bozeman<br /><strong style="color:#1A1917;font-weight:600">New Mexico</strong> — Santa Fe<br /><strong style="color:#1A1917;font-weight:600">Utah</strong> — Park City · Salt Lake City<br /><strong style="color:#1A1917;font-weight:600">California</strong> — Big Sur · Carmel · Lake Tahoe · Healdsburg · Monterey Peninsula · Napa · Sonoma · Santa Barbara</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Core services</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Transportation · Activities · Gifting and Amenities · Dine Arounds · Entertainment · Special Enhancements · Special Event Venues · Themed Events &amp; Décor</p></div>
+              </details>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>MOC&amp;CO — Event Planning Services</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">We create experiences that inspire and engage. The MOC&amp;CO team of professionals manages event operations of Fortune 500 companies, associations and other businesses. With our comprehensive breadth of live event and technology services, we partner with clients to create some of the most mind-shifting, influential, and ROI-inducing events in the world. And we do it all with extreme customer service, a keen eye on savings, and a drop-the-mic reputation.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">We have a passion for attending to every detail. Each MOC&amp;CO team member goes above and beyond to ensure our clients achieve their meeting and event goals.</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">The firm</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">23 years as a successful event and conference agency · Industry certifications and 100+ years’ experience in event management and the hotel/hospitality industry · Events from 16 to 5,000+ delegates · Produce/manage 60-80 events annually · Committed to nonprofit support through donations, volunteerism and custom community events · Certified Women’s Business Enterprise since 2007 (WBENC #253582)</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Full-service capabilities</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Strategic Meetings Management Programs · Full registration services with online technology · Accounting and budgeting · Food and beverage design and management · Transportation management · Procurement / vendor management · Onsite staffing · Production management · Metrics/ROI · Customer service</p>
+                  <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469;margin:18px 0 8px">Value adds</div>
+                  <p style="font-size:14.5px;line-height:1.75;color:#4A463E;margin:0">Mobile apps / interactive technology · Sponsorship Management · Trade Show Management · Communications and collateral · Teambuilding activities · Event marketing</p></div>
+              </details>
+              <details style="border-top:1px solid #DCD6C9">
+                <summary style="cursor:pointer;padding:20px 0;display:flex;gap:20px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;color:#1A1917">
+                  <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif;transition:transform 0.2s ease">+</span>
+                  <span>Mary O’Connor — President, MOC&amp;CO</span>
+                </summary>
+                <div style="padding:0 0 26px 34px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">As founder and president of MOC&amp;CO, Mary O’Connor has made a name for herself as a sought-after expert in the meeting and event management industry. Her breadth of industry leadership includes 23+ years at the helm of her successful event management company, preceded by 16 years in management with Hyatt Hotels and Resorts, culminating in the role of Assistant VP of Catering and Conventions. Her strengths include strategic planning, effective contract negotiations, engagement, interactive technologies, impressive décor and food and beverage presentations, budget development and management, marketing, trade shows, sponsor procurement and onsite staffing – all for clients’ meetings and incentives of 16 to 5,000+ people.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Having earned the unofficial title of “Keeper of the Limitless Lens,” Mary drives her team to excellence with extreme customer service, a keen eye on savings for clients, and creative solutions that amaze. The result: MOC&amp;CO does what large agencies won’t and what small agencies can’t. Mary’s vibrant personality and relentless pursuit of impressed clients inspires a “can-do” attitude in her staff.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Mary has led MOC&amp;CO to be consistently certified as a Women’s Business Enterprise since 2007. She was a founding member of the Multi-Cultural Foodservice and Hospitality Alliance (MFHA) and first Executive Director of the Women’s Foodservice Forum (WFF). Her leadership in these organizations, which promote diversity and advancement for women and minorities in the foodservice and hospitality industries, demonstrates her commitment to diversity and inclusion in business practices.</p>
+                  <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Mary’s passion is not only for excellence in business but also for caring for those in need. She is known for encouraging others to engage in random acts of kindness, to collaborate to bring the community together, and to support the people around us. Acknowledging her priority of doing good for others while excelling in business, Mary was most recently recognized as a 2018 Woman of Distinction by Shaw Media.</p></div>
+              </details>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-reveal="1" style="padding:88px 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+      <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:36px">Brands and independents we place business with</div>
+      <div style="display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:1px;background:#E4DFD4;border:1px solid #E4DFD4">
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-1.png" alt="Wyndham Grand" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-2.png" alt="Wyndham" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-3.png" alt="Omni Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-4.png" alt="Banyan Tree" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-5.png" alt="Raffles Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-6.png" alt="Swissôtel Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-7.png" alt="Sofitel Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-8.png" alt="Fairmont Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-9.png" alt="Delta Hotels by Marriott" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-10.png" alt="Gaylord Hotels" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-11.png" alt="JW Marriott" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-12.png" alt="The Luxury Collection" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-13.png" alt="The Ritz-Carlton" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-14.png" alt="Le Méridien" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-15.png" alt="Sheraton" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+        <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-16.png" alt="St. Regis Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section data-reveal="1" style="padding:88px 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
+      <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;padding-top:10px">What clients say</div>
+      <blockquote style="margin:0;max-width:760px">
+        <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:23px;line-height:1.5;color:#1A1917;margin:0 0 16px;text-wrap:pretty">“I have had the great pleasure in working Conference Planning Resources. In my capacity as Senior Event Manager of a global pharmaceutical company, my department was responsible for thousands of events each year. Jeff’s service, expertise, and reliability are invaluable. In addition, he always works with the client’s best interest in mind and always with a speedy turnaround time. Jeff has an innate ability to think outside the box on every event (and there have been many events since 2003). Jeff’s industry knowledge is instrumental in bringing our meetings to the highest possible level. He makes certain that we look good.</p>
+        <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:23px;line-height:1.5;color:#1A1917;margin:0 0 24px">I would highly recommend Jeff and his team to any conference/meeting planner!”</p>
+        <footer style="font-size:14px;color:#4A463E;padding-top:16px;border-top:1px solid #DCD6C9">Susan Bartlett<br /><span style="color:#7A7469">Bronze Level CTSM</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="team" style="padding:104px 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+      <div data-reveal="1" style="margin-bottom:44px">
+        <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:20px">Our team</div>
+        <h2 style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;letter-spacing:-0.02em;margin:0">The people you’ll work with</h2>
+      </div>
+        <article id="jeff" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #1A1917;align-items:start">
+          <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-jeff.png" alt="Jeff Berger" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
+          <div style="max-width:700px">
+            <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Jeff Berger</h3>
+            <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#B32014;margin:0 0 18px;line-height:1.7">President &amp; CEO<br />Hotel Procurement &amp; Event Planning Logistics</div>
+            <div style="font-size:14px;line-height:1.8;color:#6D675C;margin:0 0 18px">Conference Planning Resources, Ltd.<br />2020 Calamos Court, Suite 200<br />Naperville, IL 60563<br /><a href="tel:6307991584" style="border-bottom:1px solid #DCD6C9">(630) 799-1584</a> · (630) 839-4007<br /><a href="mailto:jeffberger@conferenceplanningresources.com" style="border-bottom:1px solid #DCD6C9">jeffberger@conferenceplanningresources.com</a></div>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Bringing over 30 years of hotel sales, marketing, and operational experience to the firm, Jeff Berger is the company’s President &amp; CEO. Prior to the introduction of Conference Planning Resources, he served as Senior Vice President of Global Sales for an industry-leading hotel site selection firm. As SVP, Mr. Berger secured relationships with virtually every major hotel brand, independent properties and cruise lines, while assisting hundreds of organizations in obtaining access to the best deals at appropriate hotels and resorts worldwide. Having initially started his career working on-site at hotels and resorts, he has unprecedented knowledge of how hotels operate, both on the operational and sales side. Mr. Berger has been awarded the honor of serving on several industry Client Advisory Board of Directors.</p>
+          </div>
+        </article>
+        <article id="kelsey" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+          <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-kelsey.png" alt="Kelsey Riley" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
+          <div style="max-width:700px">
+            <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Kelsey Riley</h3>
+            <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#B32014;margin:0 0 18px;line-height:1.7">Global Account Director<br />Hotel Procurement &amp; Event Planning Logistics</div>
+            <div style="font-size:14px;line-height:1.8;color:#6D675C;margin:0 0 18px"><a href="tel:3125759001" style="border-bottom:1px solid #DCD6C9">(312) 575-9001</a> · (312) 575-9002<br /><a href="mailto:kelseyriley@conferenceplanningresources.com" style="border-bottom:1px solid #DCD6C9">kelseyriley@conferenceplanningresources.com</a></div>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Kelsey has been with CPR for more than 10 years and has more than 20 years of experience in the hotel site selection industry. She has assisted clients with researching locations and hotels, coordinating site inspections, and negotiating contracts.</p>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Having grown up in Youngstown, Ohio, she came to Chicago to attend Northwestern University. After a brief stint at Edelman Public Relations, in the Travel and Tourism department, she transitioned to her preferred path in sales.</p>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">She has retained many of her clients for more than 17 years and believes that referrals are the key to success.</p>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">She spends her downtime volunteering with Chicago Cares, working out, traveling, and entertaining.</p>
+          </div>
+        </article>
+        <article id="debra" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+          <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-debra.png" alt="Debra Lobin" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
+          <div style="max-width:700px">
+            <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Debra Lobin</h3>
+            <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#B32014;margin:0 0 18px;line-height:1.7">Hospitality Group Consultant and Hotel Procurement &amp; Research Logistics</div>
+            <div style="font-size:14px;line-height:1.8;color:#6D675C;margin:0 0 18px"><a href="tel:6307991584" style="border-bottom:1px solid #DCD6C9">(630) 799-1584</a> · (630) 839-4008<br /><a href="mailto:DebraLobin@ConferencePlanningResources.com" style="border-bottom:1px solid #DCD6C9">DebraLobin@ConferencePlanningResources.com</a></div>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Through years of experience in Business Development and Project Management, I’ve developed a passion for supporting clients as they work to meet their objectives. Conference and Event planning is among my favorite endeavors so to now work with CPR and their services is a privilege. I look forward to meeting, working with, and supporting you in providing an event that you and your guests enjoy.</p>
+          </div>
+        </article>
+        <article id="connie" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+          <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-connie.png" alt="Connie Muryn" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
+          <div style="max-width:700px">
+            <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Connie Muryn</h3>
+            <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#B32014;margin:0 0 18px;line-height:1.7">Hospitality Group Consultant and Hotel Procurement &amp; Research Logistics</div>
+            <div style="font-size:14px;line-height:1.8;color:#6D675C;margin:0 0 18px"><a href="tel:6307991584" style="border-bottom:1px solid #DCD6C9">(630) 799-1584</a><br /><a href="mailto:ConnieMuryn@ConferencePlanningResources.com" style="border-bottom:1px solid #DCD6C9">ConnieMuryn@ConferencePlanningResources.com</a></div>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Connie comes to CPR with over 30 years of experience in Operations, Administration, and Project Management in a variety of industries, including Telecomm, Healthcare, Retail, and Global Payroll. In her previous position as Director of Integration, she traveled extensively throughout the US helping newly acquired companies blend optimally with the existing IT, HR and Operations infrastructure. While working on Global Payroll, Connie enjoyed working with partners in China, Europe, and South America. Her skillset lies in working with various key players to determine best practices. She enjoys getting down into the nitty gritty with the team, then coming up for air to consolidate and merge what she’s learned into practical solutions. Naturally forward thinking, Connie plans as far ahead as possible and considers many of the “what if’s” that could happen in a situation.</p>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">A Chicagoland native, in her spare time, Connie enjoys travel, sports, concerts, family time and reading.</p>
+          </div>
+        </article>
+        <article id="berger" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+          <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-fred.png" alt="Frederick J. Berger" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
+          <div style="max-width:700px">
+            <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Frederick J. Berger</h3>
+            <div style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#B32014;margin:0 0 18px;line-height:1.7">Managing Shareholder, AV Peer Rated<br />Riezman Berger, P.C. — Attorneys &amp; Counselors at Law</div>
+            <div style="font-size:14px;line-height:1.8;color:#6D675C;margin:0 0 18px"><a href="tel:3147270101" style="border-bottom:1px solid #DCD6C9">(314) 727-0101</a> · (314) 727-6458<br /><a href="mailto:berger@riezmanberger.com" style="border-bottom:1px solid #DCD6C9">berger@riezmanberger.com</a><br /><a href="https://www.riezmanberger.com/" style="border-bottom:1px solid #DCD6C9">riezmanberger.com</a></div>
+            <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Fred Berger has built a strong practice in the areas of Business Law, Mergers and Acquisitions, Communications and Media, Hospitality Law, Hotel Development and Franchise Transactions, Licensing Transactions, Estate Planning, Governmental Affairs and Regulations, Municipal Law, Real Estate Transactions, Tax Free Exchanges and Strategies dealing with Disregarded Entities and valuations for fee and leasehold interests, Real Property Leases, Land Development and Zoning and Entertainment Law. Fred’s practice centers on the representation of businesses and lenders in general business and real estate transactions, as well as commercial lending transactions. Fred’s clients range from start up businesses, middle market companies and Fortune 100 Corporations.</p>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <section id="faqs" style="padding:104px 0 0">
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+      <h2 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;letter-spacing:-0.02em;margin:0 0 44px">Frequently asked questions</h2>
+        <details data-reveal="1" style="border-top:1px solid #1A1917">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>1) How is CPR different from many other companies like yours in the industry?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">At CPR, we are:</p><ul style="list-style:none;margin:0;padding:0"><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">Committed full-time:</strong> We are W-2 statutory employees. As such, we are not independent contractors and we all work at CPR full time (24/7, 7 days a week).</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">Specialists:</strong> A boutique organization with very tight and high standards and SOP.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">Client-service experts:</strong> We take a true account management approach. We have people assigned to every account (a primary contact and a secondary contact as a backup).</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">Transparent:</strong> Planners see the bills with all of the final, accurate numbers from the hotel, DMC, etc. We don’t pad anything with any payments to CPR. The client knows exactly what a service or product costs as it comes from the vendor itself, not from us.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">Independent:</strong> Not a hotel representation firm. As such, we aren’t limited to the hotels we contact. We can send the client’s RFP to any hotel that will agree not to increase any hotel pricing (room rates or otherwise) because of our involvement. I have worked with companies that work with both a hotel representation firm and us. I can cover all the hotels that aren’t on their list of retained properties, ensuring we have researched all qualified hotels.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">Truly cost-free:</strong> Not charging the client for anything, at any time.</li></ul></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>2) How are you able to provide me with 20-30%+ savings?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><ul style="list-style:none;margin:0;padding:0"><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">By reducing room and event-space rates:</strong> We understand how to reach a hotel’s threshold without crossing it.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">By winning additional concessions:</strong> We don’t stop at negotiating down the room and event-space rates as low as possible. We continue negotiating to win additional concessions that save our clients money. This could include more discounted staff rooms, more upgrades, and more complimentary rooms. We also get creative in cost saving requests–for instance, waiving bartender fees with a certain dollar spend at the bar, reducing or comping the cost of staging, capping hang point charges, reducing or comping the costs of coffee and high-speed internet access connections in meeting rooms, and myriad of other area. We focus on all areas in which the hotel could be perceived as “nickel and diming” customers.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">By securing outside sponsorship:</strong> We also always try to find eligible rebate money, financial booking incentives, where others might not look. We have releationships with other stakeholders in many destinations where you might want to book your next conference that can provide additional monies to help off-set your conference expenses. Often, this information is not published, but we find it. Free money! Who doesn’t like that?</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">By negotiating price control clauses:</strong> When signing a contract several years out, we work to ensure items like food costs are capped year over year.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">By protecting clients from costly liabilities:</strong> Beyond savings, we also help protect groups from potential liabilities with our contractual clauses.</li><li style="font-size:15.5px;line-height:1.7;color:#4A463E;padding:10px 0;border-top:1px solid #E4DFD4"><strong style="color:#1A1917;font-weight:600">By leverage our relationships with have with hotels’ global sales offices:</strong> When working with CPR, we can give our clients access to the support of a global sales office contact with Marriott, Hilton, Hyatt, Omni, Loews, Four Seasons, etc.</li></ul></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>3) We have a meeting planning department (or planner) that takes care of all of our needs, so why should we be bring in an outside organization?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Some of our clients have an in-house meeting planning department and a full legal team. They still use us because we’re able to squeeze more out of the hotels than they can manage on their own. Combined buying power helps us accomplish this task.</p></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>4) We have direct relationships with the hotels, and we like having those direct relationships. We feel this is a more efficient way to get what we want. They know us. Wouldn’t you just interfere with that relationship/process?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">CPR doesn’t step on any toes, and we won’t come between you and any hotel contact with whom you have a relationship. We can simply step back once the RFP is issued and assist in whatever ways you need us. We will provide any support that you might need in terms of setting up sites or negotiating contracts, but we’ll be as hands-on or as hands-off as you wish.</p></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>5) We just use the same hotels over and over again, and we’ve been satisfied with the contracts we have negotiated for past meetings with these hotels. What more would you be able to accomplish for us?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">You don’t know what you don’t know. Maybe the contract could be tighter, be better for you. Maybe those hotels have gotten complacent in their offers to you since they know they will be getting the business. Let us contact competing hotels on your behalf to 1) demonstrate what we can do in terms of the services we provide and 2) motivate the property you have always used to sharpen their pencils, knowing that they must now compete for and earn your business. Introducing healthy competition can only help you.</p></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>6) We have a legal department that helps us negotiate contracts so why should we look to you to help us in that area?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">We work with many companies that have legal depts. Most legal departments are very adept in specific areas, but they aren’t savvy with hotel contracts. In many cases, our clients’ legal departments have reviewed our contract revisions and advised the planner that if all contracts looked like ours, they wouldn’t need to spend as much time reviewing the contracts moving forward. That ends up saving our clients money since they don’t have to pay as much for legal counsel’s time.</p></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>7) How is it that rates aren’t impacted when they pay you a marketing fee? Can’t we just take the fee that they are paying you and get the rates lowered for our group?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Hotels need to maintain rate integrity with their competitors in the marketplace. As such, they simply cannot lower their rates beyond a certain point. Hotels and hotel brands all have a pool of money set aside to pay companies like ours a marketing services fee. In paying us to refer business to them, they don’t have to hire additional salespeople with full time salaries plus benefits. So we provide significant value to the hotel community by bringing them business, even though we act independently.</p><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">At first, many meeting planners find it hard to believe that the hotel rates are not impacted by our involvement. However, the hotels put it in writing both during the bid process and within the contracts that rates are not impacted, and we can verify and prove that that’s the case. That’s one of the ways in which we demonstrate full disclosure and transparency.</p></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>8) If the hotels are the ones paying you, how do we know you have our best interests in mind when you are negotiating on our behalf? How is your loyalty not compromised?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Our number one priority is to protect the integrity ensuring your getting the best possible hotel pricing, in all areas, the best concessions, and the best contract language designed to benefit your organization. Very simple, without you, not having any projects for us to work, we are out of business.</p></div>
+        </details>
+        <details data-reveal="1" style="border-top:1px solid #DCD6C9">
+          <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
+            <span style="flex:0 0 auto;font-size:13px;color:#B32014;font-family:'Libre Franklin',sans-serif">+</span>
+            <span>9) We use on software (like Cvent) to shop for hotels and think it is a great tool as it also helps us with registration and other aspects of our event. How do you work with groups who use software like this and how are you better for us?</span>
+          </summary>
+          <div style="padding:0 0 28px 37px;max-width:760px"><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0 0 14px">Naturally, we can in unison with any existing system(s) your currently utilizing to further enhance the end result.</p><p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">However, hotels compliment our agency with our the menthods of communication telling us its more effective getting our client what they need, versus the exisiting platform our client might have been utilizing to communicate with a hotel. Often, we find our action steps actually help our client get a faster response, and their request for proposal taken more serious, having more credibility, verus other methods clients might have utilizing.</p></div>
+        </details>
+      <blockquote data-reveal="1" style="margin:56px 0 0;padding-top:32px;border-top:1px solid #DCD6C9;max-width:820px">
+        <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:21px;line-height:1.55;color:#1A1917;margin:0 0 14px;text-wrap:pretty">“As a corporate meeting planner who also has responsibility for trade shows, sample programs, catalog production and special marketing projects, I need reliable business partners that can help me with the details.</p>
+        <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:21px;line-height:1.55;color:#1A1917;margin:0 0 14px">CPR℠ has been our source for location searches, contract negotiation and expert meeting advice for the past three years. They have consistently provided me with excellent choices during the search process and have on many occasions joined me on site trips.</p>
+        <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:21px;line-height:1.55;color:#1A1917;margin:0 0 14px">Their expertise in contract negotiation has saved my company thousand of dollars on room rates, meeting room fees and food &amp; beverage.</p>
+        <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:21px;line-height:1.55;color:#1A1917;margin:0 0 22px">Since we are a major supplier to the hotel industry, we always want to use our good customers for our meeting locations. This can sometimes be difficult during the negotiation process. CPR℠ provides a perfect solution that has been a benefit to our customer relations as well as a way to control meeting costs.”</p>
+        <footer style="font-size:14px;line-height:1.6;color:#4A463E;padding-top:16px;border-top:1px solid #DCD6C9">Jeffery S. Powell<br /><span style="color:#7A7469">Marketing &amp; Promotion Manager, Edward Don &amp; Company</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:104px;border-top:1px solid #DCD6C9;background:#EFEBE2">
+    <div style="max-width:1180px;margin:0 auto;padding:104px 40px;display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start">
+      <div data-reveal="1">
+        <h2 style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.025em;margin:0 0 40px">Let’s find your next venue.</h2>
+        <div style="font-size:16px;line-height:1.8;color:#4A463E">
+          <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:14px">Conference Planning Resources</div>
+          <a href="https://maps.app.goo.gl/YsvMqdu73E6LwZZy6" style="display:block">2020 Calamos Court, Suite 200<br />Naperville, IL 60563</a>
+          <a href="tel:6307991584" style="display:inline-block;margin-top:18px;font-family:'Newsreader',Georgia,serif;font-size:32px;color:#1A1917;letter-spacing:-0.02em">(630) 799-1584</a>
+        </div>
+        <div style="display:flex;gap:24px;margin-top:36px;font-size:13.5px;color:#6D675C">
+          <a href="https://www.facebook.com/ConferencePlanningResources/" style="border-bottom:1px solid #DCD6C9;padding-bottom:3px">Facebook</a>
+          <a href="https://twitter.com/CPRIllinois" style="border-bottom:1px solid #DCD6C9;padding-bottom:3px">Twitter</a>
+          <a href="https://www.linkedin.com/company/conference-planning-resources/about/" style="border-bottom:1px solid #DCD6C9;padding-bottom:3px">LinkedIn</a>
+        </div>
+      </div>
+
+      <form data-reveal="2" onSubmit="{{ onSubmit }}" style="display:flex;flex-direction:column;gap:26px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px">
+          <label style="min-width:0;display:flex;flex-direction:column;gap:9px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469">Name
+            <input name="name" type="text" required autocomplete="name" style="width:100%;min-width:0;padding:8px 0;border:none;border-bottom:1px solid #C9C2B3;background:transparent;font-size:17px;color:#1A1917;letter-spacing:normal;text-transform:none" style-focus="outline:none;border-color:#B32014" />
+          </label>
+          <label style="min-width:0;display:flex;flex-direction:column;gap:9px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469">Phone
+            <input name="phone" type="tel" autocomplete="tel" style="width:100%;min-width:0;padding:8px 0;border:none;border-bottom:1px solid #C9C2B3;background:transparent;font-size:17px;color:#1A1917;letter-spacing:normal;text-transform:none" style-focus="outline:none;border-color:#B32014" />
+          </label>
+        </div>
+        <label style="min-width:0;display:flex;flex-direction:column;gap:9px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469">Email
+          <input name="email" type="email" required autocomplete="email" style="width:100%;min-width:0;padding:8px 0;border:none;border-bottom:1px solid #C9C2B3;background:transparent;font-size:17px;color:#1A1917;letter-spacing:normal;text-transform:none" style-focus="outline:none;border-color:#B32014" />
+        </label>
+        <label style="min-width:0;display:flex;flex-direction:column;gap:9px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469">Message
+          <textarea name="message" rows="4" required style="width:100%;min-width:0;padding:8px 0;border:none;border-bottom:1px solid #C9C2B3;background:transparent;font-size:17px;color:#1A1917;letter-spacing:normal;text-transform:none;resize:vertical" style-focus="outline:none;border-color:#B32014"></textarea>
+        </label>
+        <label style="display:flex;align-items:center;gap:11px;font-size:14px;color:#4A463E">
+          <input name="privacy" type="checkbox" required style="width:15px;height:15px;accent-color:#B32014" />
+          I agree to the <a href="https://www.conferenceplanningresources.com/privacy-policy/" style="border-bottom:1px solid #C9C2B3">Privacy Policy</a>
+        </label>
+        <sc-if value="{{ hasFormError }}">
+          <p style="margin:0;font-size:14px;line-height:1.5;color:#B32014">{{ formError }}</p>
+        </sc-if>
+        <button type="submit" style="align-self:flex-start;margin-top:4px;padding:15px 34px;border:1px solid #1A1917;background:transparent;color:#1A1917;font-size:14.5px;letter-spacing:0.02em;cursor:pointer;transition:background 0.3s ease, color 0.3s ease, border-color 0.3s ease;opacity:{{ formOpacity }}" style-hover="background:#1A1917;color:#F6F4EF">{{ sendLabel }}</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid #DCD6C9;background:#EFEBE2">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 40px;display:flex;align-items:flex-end;justify-content:space-between;gap:48px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <img src="logo.png" alt="Conference Planning Resources, Ltd." style="height:30px;width:auto;display:block" />
+        <div style="font-size:13px;color:#7A7469">2020 Calamos Court, Suite 200 · Naperville, IL 60563 · (630) 799-1584</div>
+      </div>
+      <div style="display:flex;gap:26px;font-size:13px;color:#6D675C">
+        <a href="#services" onClick="{{ pickSite }}">Services</a>
+        <a href="#team">Our Team</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.conferenceplanningresources.com/privacy-policy/">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;revealOnScroll&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false, busy: false, error: "", tab: "site" };
+
+  tabStyle(active) {
+    return "appearance:none;border:none;border-bottom:1px solid " + (active ? "#1A1917" : "#DCD6C9") +
+      ";background:transparent;text-align:left;padding:15px 0;cursor:pointer;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;transition:color 0.25s ease;color:" +
+      (active ? "#1A1917" : "#8A8579") + (active ? ";box-shadow:inset 3px 0 0 #B32014;padding-left:14px" : "");
+  }
+
+  pick(t) {
+    return (e) => {
+      if (e && e.preventDefault) e.preventDefault();
+      this.setState({ tab: t });
+    };
+  }
+
+  componentDidMount() {
+    if (this.props.revealOnScroll === false) return;
+    if (typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const nodes = Array.from(document.querySelectorAll("[data-reveal]"));
+    nodes.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.9) return; // already in view: leave alone
+      el.style.opacity = "0";
+      el.style.transform = "translateY(14px)";
+      const delay = (parseInt(el.getAttribute("data-reveal"), 10) - 1) * 90;
+      el.style.transition = "opacity 0.85s cubic-bezier(0.22,0.61,0.36,1) " + delay + "ms, transform 0.85s cubic-bezier(0.22,0.61,0.36,1) " + delay + "ms";
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "none";
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.05 });
+
+    nodes.forEach((el) => io.observe(el));
+  }
+
+  async submitContact(e) {
+    e.preventDefault();
+    if (this.state.busy || this.state.sent) return;
+
+    const form = e.target;
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") || "").trim(),
+      email: String(data.get("email") || "").trim(),
+      phone: String(data.get("phone") || "").trim(),
+      message: String(data.get("message") || "").trim(),
+      privacy: data.get("privacy") === "on",
+    };
+
+    this.setState({ busy: true, error: "" });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        this.setState({
+          busy: false,
+          error: json.error || "Something went wrong. Please call (630) 799-1584.",
+        });
+        return;
+      }
+      this.setState({ busy: false, sent: true, error: "" });
+      form.reset();
+    } catch (_) {
+      this.setState({
+        busy: false,
+        error: "Unable to send right now. Please call (630) 799-1584.",
+      });
+    }
+  }
+
+  renderVals() {
+    const t = this.state.tab;
+    const busy = this.state.busy;
+    const sent = this.state.sent;
+    return {
+      isSite: t === "site",
+      isContracts: t === "contracts",
+      isHow: t === "how",
+      isPartners: t === "partners",
+      tabSite: this.tabStyle(t === "site"),
+      tabContracts: this.tabStyle(t === "contracts"),
+      tabHow: this.tabStyle(t === "how"),
+      tabPartners: this.tabStyle(t === "partners"),
+      pickSite: this.pick("site"),
+      pickContracts: this.pick("contracts"),
+      pickHow: this.pick("how"),
+      pickPartners: this.pick("partners"),
+      formBusy: busy,
+      hasFormError: Boolean(this.state.error),
+      formError: this.state.error || "",
+      formOpacity: busy || sent ? "0.55" : "1",
+      sendLabel: sent ? "Thank you — we’ll be in touch" : busy ? "Sending…" : "Send message",
+      onSubmit: (e) => this.submitContact(e),
+    };
+  }
+}
+</script>
+</body>
+</html>
