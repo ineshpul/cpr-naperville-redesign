@@ -39,13 +39,20 @@
     flex-shrink: 0;
   }
   .header-logo {
-    height: 78px;
+    height: 112px;
     width: auto;
-    max-width: 440px;
+    max-width: min(620px, 58vw);
     object-fit: contain;
     object-position: left center;
     display: block;
     flex-shrink: 0;
+  }
+  .header-brand {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    margin-right: auto;
+    min-width: 0;
   }
   .photo-split {
     display: grid;
@@ -89,21 +96,24 @@
     display: block;
   }
   .site-header-inner {
-    max-width: 1180px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    padding: 14px 40px;
-    min-height: 108px;
+    justify-content: flex-start;
+    gap: 32px;
+    padding: 16px 28px 16px 24px;
+    min-height: 140px;
   }
   .nav-desktop {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px 28px;
     font-size: 13.5px;
     color: #4A463E;
+    margin-left: auto;
   }
   .menu-toggle {
     display: none;
@@ -132,7 +142,7 @@
   .nav-mobile {
     display: none;
     position: fixed;
-    top: 108px;
+    top: 140px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -176,7 +186,7 @@
   }
   .services-tabs {
     position: sticky;
-    top: 128px;
+    top: 156px;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #1A1917;
@@ -268,16 +278,16 @@
       max-width: 160px;
     }
     .header-logo {
-      height: 58px;
-      max-width: 320px;
+      height: 72px;
+      max-width: min(360px, 72vw);
     }
     .site-header-inner {
-      min-height: 84px;
-      padding-top: 12px !important;
-      padding-bottom: 12px !important;
+      min-height: 100px;
+      padding: 12px 16px 12px 14px !important;
+      gap: 12px;
     }
     .nav-mobile {
-      top: 84px;
+      top: 100px;
     }
   }
   @media (max-width: 520px) {
@@ -292,7 +302,7 @@
 
   <header style="position:sticky;top:0;z-index:60;background:rgba(246,244,239,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #DCD6C9">
     <div class="site-header-inner">
-      <a href="#top" style="display:flex;align-items:center;flex:0 0 auto"><img class="header-logo" src="logo.png" alt="Conference Planning Resources, Ltd." width="405" height="78" /></a>
+      <a href="#top" class="header-brand"><img class="header-logo" src="logo.png" alt="Conference Planning Resources, Ltd." width="580" height="112" /></a>
       <nav class="nav-desktop">
         <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
         <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
