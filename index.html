@@ -19,6 +19,7 @@
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; background: #F6F4EF; -webkit-font-smoothing: antialiased; }
+  body.menu-open { overflow: hidden; }
   a { color: inherit; text-decoration: none; }
   a:hover { color: #B32014; }
   input, textarea, button { font: inherit; }
@@ -37,31 +38,220 @@
     display: block;
     flex-shrink: 0;
   }
+  .site-header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0 40px;
+    height: 78px;
+  }
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 13.5px;
+    color: #4A463E;
+  }
+  .menu-toggle {
+    display: none;
+    appearance: none;
+    border: 1px solid #DCD6C9;
+    background: transparent;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 1.5px;
+    background: #1A1917;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .menu-toggle.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
+  .menu-toggle.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+  .nav-mobile {
+    display: none;
+    position: fixed;
+    inset: 78px 0 0 0;
+    z-index: 70;
+    background: rgba(246,244,239,0.98);
+    backdrop-filter: blur(10px);
+    padding: 28px 24px 40px;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+  }
+  .nav-mobile.is-open { display: flex; }
+  .nav-mobile a {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    padding: 14px 0;
+    border-bottom: 1px solid #E4DFD4;
+    color: #1A1917;
+  }
+  .service-tab {
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid #DCD6C9;
+    background: transparent;
+    text-align: left;
+    padding: 15px 0;
+    cursor: pointer;
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    transition: color 0.25s ease, box-shadow 0.25s ease, padding-left 0.25s ease;
+    color: #8A8579;
+    width: 100%;
+  }
+  .service-tab.is-active {
+    color: #1A1917;
+    border-bottom-color: #1A1917;
+    box-shadow: inset 3px 0 0 #B32014;
+    padding-left: 14px;
+  }
+  .services-tabs {
+    position: sticky;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #1A1917;
+  }
   @media (max-width: 900px) {
+    .menu-toggle { display: flex; }
     .nav-desktop { display: none !important; }
+    .site-header-inner,
+    .page-pad,
+    .section-pad {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .hero-section { padding: 72px 20px 56px !important; }
+    .hero-grid,
+    .stats-grid,
+    .split-340,
+    .why-grid,
+    .services-layout,
+    .quote-grid,
+    .team-card,
+    .contact-grid,
+    .form-row {
+      grid-template-columns: 1fr !important;
+      gap: 28px !important;
+    }
+    .stats-grid > div {
+      padding: 28px 0 !important;
+      border-right: none !important;
+      border-bottom: 1px solid #DCD6C9;
+    }
+    .stats-grid > div:last-child { border-bottom: none; }
+    .split-340 { gap: 24px !important; }
+    .why-grid { gap: 40px !important; }
+    .services-layout { gap: 28px !important; }
+    .services-tabs {
+      position: static;
+      flex-direction: row;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      border-top: none;
+      border-bottom: 1px solid #DCD6C9;
+      gap: 0;
+      margin: 0 -20px;
+      padding: 0 20px 2px;
+    }
+    .service-tab {
+      flex: 0 0 auto;
+      width: auto;
+      white-space: nowrap;
+      padding: 12px 16px;
+      border-bottom: 2px solid transparent;
+      box-shadow: none !important;
+      font-size: 17px;
+    }
+    .service-tab.is-active {
+      padding-left: 16px;
+      border-bottom-color: #B32014;
+      color: #1A1917;
+    }
+    .hotel-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    .team-card { gap: 24px !important; }
+    .team-card > div:first-child {
+      max-width: 220px;
+      width: 55%;
+    }
+    .contact-section { margin-top: 64px !important; }
+    .contact-grid { gap: 40px !important; padding-top: 64px !important; padding-bottom: 64px !important; }
+    .footer-inner {
+      align-items: flex-start !important;
+      flex-direction: column;
+      gap: 28px !important;
+      padding: 40px 20px !important;
+    }
+    .footer-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px !important;
+    }
+    .brand-logo {
+      height: 30px;
+      max-width: 160px;
+    }
+  }
+  @media (max-width: 520px) {
+    .hotel-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    .form-row { gap: 18px !important; }
   }
 </style>
 </helmet>
 <div style="background:#F6F4EF;color:#1A1917;font-family:'Libre Franklin',system-ui,sans-serif">
 
   <header style="position:sticky;top:0;z-index:60;background:rgba(246,244,239,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #DCD6C9">
-    <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;padding:0 40px;height:78px">
+    <div class="site-header-inner">
       <a href="#top" style="display:flex;align-items:center;flex:0 0 auto"><img class="brand-logo" src="logo.png" alt="Conference Planning Resources, Ltd." width="187" height="36" /></a>
-      <nav class="nav-desktop" style="display:flex;align-items:center;gap:30px;font-size:13.5px;color:#4A463E">
+      <nav class="nav-desktop">
         <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
         <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
         <a href="#services" onClick="{{ pickHow }}">How We Work</a>
         <a href="#services" onClick="{{ pickPartners }}">Partner Alliance</a>
-        <a href="#team">Our Team</a>
-        <a href="#faqs">FAQs</a>
-        <a href="#contact" style="color:#1A1917;border-bottom:1px solid #B32014;padding-bottom:2px" style-hover="color:#B32014">Contact</a>
+        <a href="#team" onClick="{{ closeMenu }}">Our Team</a>
+        <a href="#faqs" onClick="{{ closeMenu }}">FAQs</a>
+        <a href="#contact" onClick="{{ closeMenu }}" style="color:#1A1917;border-bottom:1px solid #B32014;padding-bottom:2px" style-hover="color:#B32014">Contact</a>
       </nav>
+      <button type="button" class="menu-toggle {{ menuToggleClass }}" onClick="{{ toggleMenu }}" aria-label="{{ menuAria }}" aria-expanded="{{ menuExpanded }}">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="nav-mobile {{ menuNavClass }}" aria-hidden="{{ menuHidden }}">
+      <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
+      <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
+      <a href="#services" onClick="{{ pickHow }}">How We Work</a>
+      <a href="#services" onClick="{{ pickPartners }}">Partner Alliance</a>
+      <a href="#team" onClick="{{ closeMenu }}">Our Team</a>
+      <a href="#faqs" onClick="{{ closeMenu }}">FAQs</a>
+      <a href="#contact" onClick="{{ closeMenu }}">Contact</a>
+      <a href="tel:6307991584" onClick="{{ closeMenu }}">(630) 799-1584</a>
+    </nav>
   </header>
 
-  <section id="top" style="max-width:1180px;margin:0 auto;padding:120px 40px 96px">
+  <section id="top" class="hero-section" style="max-width:1180px;margin:0 auto;padding:120px 40px 96px">
     <div data-reveal="1" style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:36px">Naperville, Illinois</div>
-    <div style="display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:72px;align-items:end">
+    <div class="hero-grid" style="display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:72px;align-items:end">
       <h1 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:clamp(44px,5.4vw,76px);line-height:1.03;letter-spacing:-0.025em;margin:0;text-wrap:balance">Bringing life to meetings and events.</h1>
       <div data-reveal="2" style="padding-bottom:8px">
         <p style="font-size:18px;line-height:1.66;color:#3D3A34;margin:0 0 26px;text-wrap:pretty">Hotel procurement, site selection and contract negotiation for state and national associations and Fortune&nbsp;500 companies.</p>
@@ -74,7 +264,7 @@
   </section>
 
   <section data-reveal="1" style="border-top:1px solid #DCD6C9">
-    <div style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(3,1fr)">
+    <div class="stats-grid page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(3,1fr)">
       <div style="padding:44px 40px 44px 0;border-right:1px solid #DCD6C9">
         <div style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:42px;line-height:1;letter-spacing:-0.02em">30+ years</div>
         <div style="font-size:14px;color:#6D675C;margin-top:12px">Building industry relationships</div>
@@ -91,7 +281,7 @@
   </section>
 
   <section style="border-top:1px solid #DCD6C9">
-    <div style="max-width:1180px;margin:0 auto;padding:104px 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
+    <div class="split-340 page-pad" style="max-width:1180px;margin:0 auto;padding:104px 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
       <h2 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;line-height:1.1;letter-spacing:-0.02em;margin:0">Make the most of your meetings and events</h2>
       <div data-reveal="2" style="max-width:660px">
         <p style="font-size:19px;line-height:1.72;color:#3D3A34;margin:0 0 28px;text-wrap:pretty">Conference Planning Resources specializes in hotel procurement, site selection and contract negotiation. For decades, state and national associations and Fortune 500 companies have relied on Conference Planning Resources to find their best hotel and resort options at the best prices. From simple and intimate gatherings to lavish meetings and events around the world, you can trust us to find you what you need for your events so you can focus on serving your clients and growing your business.</p>
@@ -101,9 +291,9 @@
   </section>
 
   <section style="border-top:1px solid #DCD6C9">
-    <div style="max-width:1180px;margin:0 auto;padding:96px 40px 24px">
+    <div class="page-pad" style="max-width:1180px;margin:0 auto;padding:96px 40px 24px">
       <div data-reveal="1" style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:64px">Why clients work with us</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:56px">
+      <div class="why-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:56px">
         <article data-reveal="1" style="display:flex;flex-direction:column">
           <div style="font-family:'Newsreader',Georgia,serif;font-size:15px;color:#B32014;margin-bottom:20px">01</div>
           <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:27px;line-height:1.18;letter-spacing:-0.015em;margin:0 0 18px;padding-top:18px;border-top:1px solid #1A1917">Work smarter and easier</h3>
@@ -124,15 +314,15 @@
   </section>
 
   <section id="services" style="padding:96px 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+    <div class="page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px">
       <h2 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;letter-spacing:-0.02em;margin:0 0 48px">Our services</h2>
 
-      <div style="display:grid;grid-template-columns:minmax(200px,280px) minmax(0,1fr);gap:48px;align-items:start">
-        <nav style="position:sticky;top:110px;display:flex;flex-direction:column;border-top:1px solid #1A1917">
-          <button type="button" onClick="{{ pickSite }}" style="{{ tabSite }}">Site Selection</button>
-          <button type="button" onClick="{{ pickContracts }}" style="{{ tabContracts }}">Contract Negotiations</button>
-          <button type="button" onClick="{{ pickHow }}" style="{{ tabHow }}">How We Work</button>
-          <button type="button" onClick="{{ pickPartners }}" style="{{ tabPartners }}">Partner Alliance</button>
+      <div class="services-layout" style="display:grid;grid-template-columns:minmax(200px,280px) minmax(0,1fr);gap:48px;align-items:start">
+        <nav class="services-tabs" aria-label="Service sections">
+          <button type="button" class="{{ tabSiteClass }}" onClick="{{ pickSite }}">Site Selection</button>
+          <button type="button" class="{{ tabContractsClass }}" onClick="{{ pickContracts }}">Contract Negotiations</button>
+          <button type="button" class="{{ tabHowClass }}" onClick="{{ pickHow }}">How We Work</button>
+          <button type="button" class="{{ tabPartnersClass }}" onClick="{{ pickPartners }}">Partner Alliance</button>
         </nav>
 
         <div>
@@ -361,9 +551,9 @@
   </section>
 
   <section data-reveal="1" style="padding:88px 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+    <div class="page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px">
       <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:36px">Brands and independents we place business with</div>
-      <div style="display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:1px;background:#E4DFD4;border:1px solid #E4DFD4">
+      <div class="hotel-grid" style="display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:1px;background:#E4DFD4;border:1px solid #E4DFD4">
         <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-1.png" alt="Wyndham Grand" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
         <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-2.png" alt="Wyndham" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
         <div style="background:#FDFCFA;display:flex;align-items:center;justify-content:center;padding:14px"><img src="hotel-3.png" alt="Omni Hotels &amp; Resorts" style="max-width:100%;height:auto;display:block;filter:grayscale(1);opacity:0.7" /></div>
@@ -385,7 +575,7 @@
   </section>
 
   <section data-reveal="1" style="padding:88px 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
+    <div class="quote-grid page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:340px 1fr;gap:80px;align-items:start">
       <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;padding-top:10px">What clients say</div>
       <blockquote style="margin:0;max-width:760px">
         <p style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-style:italic;font-size:23px;line-height:1.5;color:#1A1917;margin:0 0 16px;text-wrap:pretty">“I have had the great pleasure in working Conference Planning Resources. In my capacity as Senior Event Manager of a global pharmaceutical company, my department was responsible for thousands of events each year. Jeff’s service, expertise, and reliability are invaluable. In addition, he always works with the client’s best interest in mind and always with a speedy turnaround time. Jeff has an innate ability to think outside the box on every event (and there have been many events since 2003). Jeff’s industry knowledge is instrumental in bringing our meetings to the highest possible level. He makes certain that we look good.</p>
@@ -396,12 +586,12 @@
   </section>
 
   <section id="team" style="padding:104px 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+    <div class="page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px">
       <div data-reveal="1" style="margin-bottom:44px">
         <div style="font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#7A7469;margin-bottom:20px">Our team</div>
         <h2 style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;letter-spacing:-0.02em;margin:0">The people you’ll work with</h2>
       </div>
-        <article id="jeff" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #1A1917;align-items:start">
+        <article id="jeff" class="team-card" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #1A1917;align-items:start">
           <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-jeff.png" alt="Jeff Berger" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
           <div style="max-width:700px">
             <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Jeff Berger</h3>
@@ -410,7 +600,7 @@
             <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Bringing over 30 years of hotel sales, marketing, and operational experience to the firm, Jeff Berger is the company’s President &amp; CEO. Prior to the introduction of Conference Planning Resources, he served as Senior Vice President of Global Sales for an industry-leading hotel site selection firm. As SVP, Mr. Berger secured relationships with virtually every major hotel brand, independent properties and cruise lines, while assisting hundreds of organizations in obtaining access to the best deals at appropriate hotels and resorts worldwide. Having initially started his career working on-site at hotels and resorts, he has unprecedented knowledge of how hotels operate, both on the operational and sales side. Mr. Berger has been awarded the honor of serving on several industry Client Advisory Board of Directors.</p>
           </div>
         </article>
-        <article id="kelsey" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+        <article id="kelsey" class="team-card" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
           <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-kelsey.png" alt="Kelsey Riley" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
           <div style="max-width:700px">
             <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Kelsey Riley</h3>
@@ -422,7 +612,7 @@
             <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">She spends her downtime volunteering with Chicago Cares, working out, traveling, and entertaining.</p>
           </div>
         </article>
-        <article id="debra" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+        <article id="debra" class="team-card" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
           <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-debra.png" alt="Debra Lobin" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
           <div style="max-width:700px">
             <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Debra Lobin</h3>
@@ -431,7 +621,7 @@
             <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">Through years of experience in Business Development and Project Management, I’ve developed a passion for supporting clients as they work to meet their objectives. Conference and Event planning is among my favorite endeavors so to now work with CPR and their services is a privilege. I look forward to meeting, working with, and supporting you in providing an event that you and your guests enjoy.</p>
           </div>
         </article>
-        <article id="connie" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+        <article id="connie" class="team-card" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
           <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-connie.png" alt="Connie Muryn" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
           <div style="max-width:700px">
             <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Connie Muryn</h3>
@@ -441,7 +631,7 @@
             <p style="font-size:15.5px;line-height:1.72;color:#4A463E;margin:0">A Chicagoland native, in her spare time, Connie enjoys travel, sports, concerts, family time and reading.</p>
           </div>
         </article>
-        <article id="berger" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
+        <article id="berger" class="team-card" data-reveal="1" style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:64px;padding:44px 0;border-top:1px solid #DCD6C9;align-items:start">
           <div style="aspect-ratio:4/5;overflow:hidden;background:#E8E2D6"><img src="team-fred.png" alt="Frederick J. Berger" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(1) contrast(1.02)" /></div>
           <div style="max-width:700px">
             <h3 style="font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.02em;margin:0 0 10px">Frederick J. Berger</h3>
@@ -454,7 +644,7 @@
   </section>
 
   <section id="faqs" style="padding:104px 0 0">
-    <div style="max-width:1180px;margin:0 auto;padding:0 40px">
+    <div class="page-pad" style="max-width:1180px;margin:0 auto;padding:0 40px">
       <h2 data-reveal="1" style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:38px;letter-spacing:-0.02em;margin:0 0 44px">Frequently asked questions</h2>
         <details data-reveal="1" style="border-top:1px solid #1A1917">
           <summary style="cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:24px;align-items:baseline;font-family:'Newsreader',Georgia,serif;font-size:21px;line-height:1.35;letter-spacing:-0.015em;color:#1A1917">
@@ -529,8 +719,8 @@
     </div>
   </section>
 
-  <section id="contact" style="margin-top:104px;border-top:1px solid #DCD6C9;background:#EFEBE2">
-    <div style="max-width:1180px;margin:0 auto;padding:104px 40px;display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start">
+  <section id="contact" class="contact-section" style="margin-top:104px;border-top:1px solid #DCD6C9;background:#EFEBE2">
+    <div class="contact-grid page-pad" style="max-width:1180px;margin:0 auto;padding:104px 40px;display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start">
       <div data-reveal="1">
         <h2 style="font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.025em;margin:0 0 40px">Let’s find your next venue.</h2>
         <div style="font-size:16px;line-height:1.8;color:#4A463E">
@@ -546,7 +736,7 @@
       </div>
 
       <form data-reveal="2" onSubmit="{{ onSubmit }}" style="display:flex;flex-direction:column;gap:26px">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px">
+        <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:26px">
           <label style="min-width:0;display:flex;flex-direction:column;gap:9px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#7A7469">Name
             <input name="name" type="text" required autocomplete="name" style="width:100%;min-width:0;padding:8px 0;border:none;border-bottom:1px solid #C9C2B3;background:transparent;font-size:17px;color:#1A1917;letter-spacing:normal;text-transform:none" style-focus="outline:none;border-color:#B32014" />
           </label>
@@ -573,16 +763,16 @@
   </section>
 
   <footer style="border-top:1px solid #DCD6C9;background:#EFEBE2">
-    <div style="max-width:1180px;margin:0 auto;padding:56px 40px;display:flex;align-items:flex-end;justify-content:space-between;gap:48px;flex-wrap:wrap">
+    <div class="footer-inner" style="max-width:1180px;margin:0 auto;padding:56px 40px;display:flex;align-items:flex-end;justify-content:space-between;gap:48px;flex-wrap:wrap">
       <div style="display:flex;flex-direction:column;align-items:flex-start;gap:18px">
         <img class="brand-logo" src="logo.png" alt="Conference Planning Resources, Ltd." width="187" height="36" />
         <div style="font-size:13px;color:#7A7469">2020 Calamos Court, Suite 200 · Naperville, IL 60563 · (630) 799-1584</div>
       </div>
-      <div style="display:flex;gap:26px;font-size:13px;color:#6D675C;flex-wrap:wrap">
+      <div class="footer-links" style="display:flex;gap:26px;font-size:13px;color:#6D675C;flex-wrap:wrap">
         <a href="#services" onClick="{{ pickSite }}">Services</a>
-        <a href="#team">Our Team</a>
-        <a href="#faqs">FAQs</a>
-        <a href="#contact">Contact</a>
+        <a href="#team" onClick="{{ closeMenu }}">Our Team</a>
+        <a href="#faqs" onClick="{{ closeMenu }}">FAQs</a>
+        <a href="#contact" onClick="{{ closeMenu }}">Contact</a>
         <a href="https://www.conferenceplanningresources.com/privacy-policy/">Privacy Policy</a>
       </div>
     </div>
@@ -592,22 +782,57 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;revealOnScroll&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
 class Component extends DCLogic {
-  state = { sent: false, busy: false, error: "", tab: "site" };
+  state = { sent: false, busy: false, error: "", tab: "site", menuOpen: false };
 
-  tabStyle(active) {
-    return "appearance:none;border:none;border-bottom:1px solid " + (active ? "#1A1917" : "#DCD6C9") +
-      ";background:transparent;text-align:left;padding:15px 0;cursor:pointer;font-family:'Newsreader',Georgia,serif;font-size:20px;letter-spacing:-0.015em;transition:color 0.25s ease;color:" +
-      (active ? "#1A1917" : "#8A8579") + (active ? ";box-shadow:inset 3px 0 0 #B32014;padding-left:14px" : "");
+  tabClass(active) {
+    return active ? "service-tab is-active" : "service-tab";
+  }
+
+  syncBodyScroll(open) {
+    if (typeof document === "undefined") return;
+    document.body.classList.toggle("menu-open", Boolean(open));
   }
 
   pick(t) {
     return (e) => {
       if (e && e.preventDefault) e.preventDefault();
-      this.setState({ tab: t });
+      this.setState({ tab: t, menuOpen: false });
+      this.syncBodyScroll(false);
+      if (typeof document !== "undefined") {
+        const section = document.getElementById("services");
+        if (section) {
+          requestAnimationFrame(() => {
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        }
+      }
     };
   }
 
+  toggleMenu = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    const next = !this.state.menuOpen;
+    this.setState({ menuOpen: next });
+    this.syncBodyScroll(next);
+  };
+
+  closeMenu = (e) => {
+    if (this.state.menuOpen) {
+      this.setState({ menuOpen: false });
+      this.syncBodyScroll(false);
+    }
+  };
+
   componentDidMount() {
+    if (typeof window !== "undefined") {
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && this.state.menuOpen) this.closeMenu();
+      });
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 900 && this.state.menuOpen) this.closeMenu();
+      });
+    }
+
     if (this.props.revealOnScroll === false) return;
     if (typeof IntersectionObserver === "undefined") return;
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -615,7 +840,7 @@ class Component extends DCLogic {
     const nodes = Array.from(document.querySelectorAll("[data-reveal]"));
     nodes.forEach((el) => {
       const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.9) return; // already in view: leave alone
+      if (rect.top < window.innerHeight * 0.9) return;
       el.style.opacity = "0";
       el.style.transform = "translateY(14px)";
       const delay = (parseInt(el.getAttribute("data-reveal"), 10) - 1) * 90;
@@ -678,19 +903,27 @@ class Component extends DCLogic {
     const t = this.state.tab;
     const busy = this.state.busy;
     const sent = this.state.sent;
+    const menuOpen = this.state.menuOpen;
     return {
       isSite: t === "site",
       isContracts: t === "contracts",
       isHow: t === "how",
       isPartners: t === "partners",
-      tabSite: this.tabStyle(t === "site"),
-      tabContracts: this.tabStyle(t === "contracts"),
-      tabHow: this.tabStyle(t === "how"),
-      tabPartners: this.tabStyle(t === "partners"),
+      tabSiteClass: this.tabClass(t === "site"),
+      tabContractsClass: this.tabClass(t === "contracts"),
+      tabHowClass: this.tabClass(t === "how"),
+      tabPartnersClass: this.tabClass(t === "partners"),
       pickSite: this.pick("site"),
       pickContracts: this.pick("contracts"),
       pickHow: this.pick("how"),
       pickPartners: this.pick("partners"),
+      toggleMenu: this.toggleMenu,
+      closeMenu: this.closeMenu,
+      menuToggleClass: menuOpen ? "is-open" : "",
+      menuNavClass: menuOpen ? "is-open" : "",
+      menuAria: menuOpen ? "Close menu" : "Open menu",
+      menuExpanded: menuOpen ? "true" : "false",
+      menuHidden: menuOpen ? "false" : "true",
       formBusy: busy,
       hasFormError: Boolean(this.state.error),
       formError: this.state.error || "",
