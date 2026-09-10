@@ -118,6 +118,15 @@
   }
   .nav-desktop a {
     white-space: nowrap;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+  .nav-desktop a.nav-contact {
+    color: #1A1917;
+    border-bottom-color: #B32014;
+  }
+  .nav-desktop a.nav-contact:hover {
+    color: #B32014;
   }
   .menu-toggle {
     display: none;
@@ -314,7 +323,7 @@
         <a href="#services" onClick="{{ pickPartners }}">Partner Alliance</a>
         <a href="#team" onClick="{{ closeMenu }}">Our Team</a>
         <a href="#faqs" onClick="{{ closeMenu }}">FAQs</a>
-        <a href="#contact" onClick="{{ closeMenu }}" style="color:#1A1917;border-bottom:1px solid #B32014;padding-bottom:2px" style-hover="color:#B32014">Contact</a>
+        <a href="#contact" class="nav-contact" onClick="{{ closeMenu }}">Contact</a>
       </nav>
       <button type="button" class="menu-toggle {{ menuToggleClass }}" onClick="{{ toggleMenu }}" aria-label="{{ menuAria }}" aria-expanded="{{ menuExpanded }}">
         <span></span><span></span><span></span>
