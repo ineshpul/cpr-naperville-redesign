@@ -39,13 +39,13 @@
     flex-shrink: 0;
   }
   .header-logo {
-    height: 112px;
+    height: 72px;
     width: auto;
-    max-width: min(620px, 58vw);
+    max-width: min(380px, 34vw);
     object-fit: contain;
     object-position: left center;
     display: block;
-    flex-shrink: 0;
+    flex-shrink: 1;
   }
   .header-brand {
     display: flex;
@@ -101,19 +101,23 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 32px;
-    padding: 16px 28px 16px 24px;
-    min-height: 140px;
+    gap: 24px;
+    padding: 14px 28px 14px 24px;
+    min-height: 100px;
   }
   .nav-desktop {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 22px 28px;
-    font-size: 13.5px;
+    flex-wrap: nowrap;
+    gap: 16px 20px;
+    font-size: 13px;
     color: #4A463E;
     margin-left: auto;
+    flex-shrink: 0;
+  }
+  .nav-desktop a {
+    white-space: nowrap;
   }
   .menu-toggle {
     display: none;
@@ -142,7 +146,7 @@
   .nav-mobile {
     display: none;
     position: fixed;
-    top: 140px;
+    top: 100px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -186,7 +190,7 @@
   }
   .services-tabs {
     position: sticky;
-    top: 156px;
+    top: 116px;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #1A1917;
@@ -302,7 +306,7 @@
 
   <header style="position:sticky;top:0;z-index:60;background:rgba(246,244,239,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #DCD6C9">
     <div class="site-header-inner">
-      <a href="#top" class="header-brand"><img class="header-logo" src="logo.png" alt="Conference Planning Resources, Ltd." width="580" height="112" /></a>
+      <a href="#top" class="header-brand"><img class="header-logo" src="logo.png" alt="Conference Planning Resources, Ltd." width="380" height="72" /></a>
       <nav class="nav-desktop">
         <a href="#services" onClick="{{ pickSite }}">Site Selection</a>
         <a href="#services" onClick="{{ pickContracts }}">Contract Negotiations</a>
